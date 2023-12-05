@@ -12,17 +12,18 @@
     <!-- HEADER -->
     <header>
         <nav>
-            <a class="logo" href="/">Math</a>
+            <a class="logo" href="index.html">Math</a>
             <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
             <ul class="nav-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#rumusLuas">Luas Segitiga</a></li>
+                <li><a href="#">Keliling Segitiga</a></li>
             </ul>
         </nav>
+        <br>
     </header>
 
     <!-- MAIN -->
@@ -32,12 +33,29 @@
                 <h2>Luas Segitiga</h2>
             </div>
         </div>
-        <img src="" alt="">
         <br>
-        <h1></h1>
+        <img src="asset/gambar1.JPG" alt="Gambar Rumus" id="luasSegitiga">
+        <br>
+        <h1 class="perhitungan" id="rumusLuas">Hitung Luas Segitiga</h1>
+        <br>
+        <form id="inputForm">
+            <label for="" class="alas-tinggi">Alas :</label>
+            <br>
+            <input type="number" class="input-alas" id="alas">
+            <br>
+            <label for="" class="alas-tinggi">Tinggi :</label>
+            <br>
+            <input type="number" required class="input-alas" id="tinggi">
+            <br>
+            <div id="output"></div>
+        </form>
 
+        <button style="display: flex; margin: auto; margin-top: 100px;" id="hitung"> Hitung </button>
+        <button style="display: flex; margin: auto; margin-top: 30px; color: orange;" id="reset"> Reset </button>
     </main>
 
+
+    <script src="index-js/script.js"></script>
 </body>
 
 </html>
