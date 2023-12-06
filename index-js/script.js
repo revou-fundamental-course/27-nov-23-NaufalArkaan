@@ -11,10 +11,18 @@ hitung.addEventListener('click', function(){
 })
 
 // RESET LUAS
-let btnClear = document.querySelector('#reset');
-let inputs = document.querySelectorAll('input');
-let outputs = document.querySelector('#output');
+function resetForm() {
+    // Reset input form values
+    document.getElementById('inputForm').reset();
+    
+    // Hide output container and display input container
+    document.getElementById('output').style.display = 'none';
 
-btnClear.addEventListener('click',()=>{
-    inputs.forEach(input=>input.value='');
-});
+
+    }
+
+// let btnClear = document.querySelector('#reset');
+// let inputs = document.querySelectorAll('#output');
+// btnClear.addEventListener('click', () => {
+//     inputs.forEach(output =>  output.value = '');
+// });

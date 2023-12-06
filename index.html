@@ -20,7 +20,7 @@
             </div>
             <ul class="nav-list">
                 <li><a href="#rumusLuas">Luas Segitiga</a></li>
-                <li><a href="#">Keliling Segitiga</a></li>
+                <li><a href="#rumusKeliling">Keliling Segitiga</a></li>
             </ul>
         </nav>
         <br>
@@ -47,11 +47,41 @@
             <br>
             <input type="number" required class="input-alas" id="tinggi">
             <br>
-            <div id="output"></div>
+            <div id="output">
+            </div>
         </form>
 
         <button style="display: flex; margin: auto; margin-top: 100px;" id="hitung"> Hitung </button>
-        <button style="display: flex; margin: auto; margin-top: 30px; color: orange;" id="reset"> Reset </button>
+        <button style="display: flex; margin: auto; margin-top: 30px; color: orange;" id="reset" onclick="resetForm()">
+            Reset </button>
+        <br>
+
+        <div class="luas" style="margin-top: 30px;">
+            <div class="judul">
+                <h2>Keliling Segitiga</h2>
+            </div>
+        </div>
+        <br>
+        <img src="asset/gambar1.JPG" alt="Gambar Rumus" id="luasSegitiga">
+        <br>
+        <h1 class="perhitungan" id="rumusKeliling">Hitung Keliling Segitiga</h1>
+        <br>
+        <form id="inputForm">
+            <label for="" class="alas-tinggi">Alas :</label>
+            <br>
+            <input type="number" class="input-alas" id="alas">
+            <br>
+            <label for="" class="alas-tinggi">Tinggi :</label>
+            <br>
+            <input type="number" required class="input-alas" id="tinggi">
+            <br>
+            <div id="output">
+            </div>
+        </form>
+
+        <button style="display: flex; margin: auto; margin-top: 100px;" id="hitung"> Hitung </button>
+        <button style="display: flex; margin: auto; margin-top: 30px; color: orange;" id="reset" onclick="resetForm()">
+            Reset </button>
     </main>
 
 
