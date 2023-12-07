@@ -156,7 +156,14 @@ main {
     font-size: 20px;
 }
 
-#output{
+#output {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#cariKeliling {
     text-align: center;
     margin-top: 20px;
     font-size: 20px;
